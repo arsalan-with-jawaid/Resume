@@ -1,0 +1,120 @@
+/* Overall Background */
+body {
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Container for the resume */
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007BFF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Personal Info Section */
+.personal-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border: 4px solid #007BFF;
+}
+
+.personal-info h1 {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+  background: linear-gradient(90deg, #007BFF, #00d4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.personal-info p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 24px;
+  margin: 15px 0 10px;
+  color: #fff;
+  background: linear-gradient(120deg, #007BFF, #4f93ff);
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Section Content Styling */
+.section-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills and Work Experience List */
+.skills ul, .work-experience ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li, .work-experience li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.skills li::before, .work-experience li::before {
+  content: "•";
+  color: #007BFF;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  .personal-info h1 {
+      font-size: 24px;
+  }
+
+  .personal-info p {
+      font-size: 16px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  .skills li, .work-experience li {
+      font-size: 16px;
+  }
+}
